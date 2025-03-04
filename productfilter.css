@@ -1,0 +1,95 @@
+body{
+    font-family: 'Arial',sans-serif;
+    background-color: #f4f7fa;
+    color: #333;
+}
+h1{
+    font-size: 2.5rem;
+    font-weight: 700;
+    color:#004085;
+    margin-bottom: 2rem;
+}
+.card{
+    border: none;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+    background-color: #fff;
+}
+.card:hover{
+    transform:translateY(-10px);
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.15);
+}
+.card-img-top{
+    height: 250px;
+    object-fit: cover;
+}
+.filter-card{
+    background-color: #e9f7fd;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    padding: 2rem;
+    position: sticky;
+    top: 10px;
+    z-index: 10px;
+    transition: box-shadow 0.3s ease;
+}
+.filter-card:hover{
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+}
+.filter-card h4{
+    font-size: 1.5rem;
+    font-weight: 600;
+    margin-bottom: 1.5rem;
+    color: #004085;
+}
+.form-label{
+    font-weight: 500;
+}
+.form-range{
+    width: 100%;
+    margin-top: 0.5rem;
+}
+.filter-btn{
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 12px 20px;
+    border-radius: 8px;
+    cursor: pointer;
+    width: 100%;
+    font-weight: 600;
+    transition: background-color 0.3s;
+}
+.filter-btn:hover{
+    background-color: #0056b3;
+}
+.search-bar{
+    margin-bottom: 2rem;
+}
+.row{
+    display: flex;
+    flex-wrap: wrap;
+}
+.product-card{
+    margin-bottom: 30px;
+}
+.out-of-stock{
+    opacity: 0.5;
+    pointer-events: none;
+}
+.price-range-text{
+    font-weight: 600;
+}
+.form-select,
+.form-range{
+    border-radius: 8px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    background-color: #fff;
+    transition: border-color 0.3s;
+}
+.form-select:focus,
+.form-range:focus{
+    border-color: #007bff;
+}
