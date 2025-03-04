@@ -3,4 +3,14 @@ A website that visualizes use of HTML,CSS and JAVASCRIPT in the building of a fu
 This system uses functional technology to view products and their real world images.
 
 # TABLE OF CONTENTS
+1.Overview
+2.System Flow
+3.How it Works
+4.Future Enhancements
+
+
+
+
+
+
 
