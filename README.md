@@ -66,7 +66,7 @@ product-filter/
 │   ├── dellXPS13.jpg
 │   └── ... (other product images)
 └── README.md                 # This documentation
-
+```
 # Usage
 1. Filter Products:
  -Adjust price slider to set maximum price
@@ -79,7 +79,7 @@ product-filter/
 3. Reset Filter:
  -Click the "Reset Filters" button to clear all filters
 
-# Customization
+### Customization
 To add your own products:
  1. Edit the products array in productfilter.js:
 ```
@@ -97,16 +97,19 @@ To add your own products:
     },
   
 ];
-2.Add corresponding product images to the Img/ directory
+```
+
+2.Add corresponding product images to the image/ directory
 
 # Browser Support
 The application is tested and works on:
+```
   -Chrome(latest)
   -Firefox(latest)
   -Edge(latest)
   -Safari(latest)
   -Mobile browsers(Chrome, Safari)
-
+```
 # Contact
 Contribution are welcome!
 ```
@@ -119,7 +122,7 @@ Contribution are welcome!
 4.Push to the branch (git push origin feature/your-feature)
 
 5.Open a Pull Request
-
+```
 Contact me <a href="https://github.com/333IAN">here</a>
 
 
