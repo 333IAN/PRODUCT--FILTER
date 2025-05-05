@@ -54,7 +54,8 @@ A responsive product filtering application that allows users to browse and filte
 
 2. Open in browser
 
-# 3.Project Structure
+### 3.Project Structure
+```
 product-filter/
 ├── productfilter.html        # Main HTML file
 ├── productfilter.css         # Custom styles
@@ -81,6 +82,7 @@ product-filter/
 # Customization
 To add your own products:
  1. Edit the products array in productfilter.js:
+```
     const products = [
       {
         id: 1,
@@ -107,6 +109,7 @@ The application is tested and works on:
 
 # Contact
 Contribution are welcome!
+```
 1. Fork the repository
 
 2.Create a new branch (git checkout -b feature/your-feature)
