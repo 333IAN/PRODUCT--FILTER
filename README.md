@@ -10,7 +10,7 @@ A responsive product filtering application that allows users to browse and filte
 ![Product Filter Homepage View](images/screenshot.png)
 
 
-![Product Filter Dashboard](/Screenshot(10).png)
+![Product Filter Dashboard](images/Screenshot(10).png)
 
 
 
