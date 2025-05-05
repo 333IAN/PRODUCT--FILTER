@@ -1,36 +1,120 @@
-# PRODUCT-FILTER WEBSITE
-A website that visualizes use of HTML,CSS and JAVASCRIPT in the building of a functional product filter webpage for sorting out products according to factors such as price, rating and description
-This system uses functional technology to view products and their real world images.
+# Product Filter Application
 
-# TABLE OF CONTENTS
-1.Overview
-2.System Flow
-3.How it Works
-4.Future Enhancements
+[![HTML5](https://img.shields.io/badge/HTML5-E34F26?logo=html5&logoColor=white)](https://developer.mozilla.org/en-US/docs/Web/HTML)
+[![CSS3](https://img.shields.io/badge/CSS3-1572B6?logo=css3&logoColor=white)](https://developer.mozilla.org/en-US/docs/Web/CSS)
+[![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?logo=javascript&logoColor=black)](https://developer.mozilla.org/en-US/docs/Web/JavaScript)
+[![Bootstrap](https://img.shields.io/badge/Bootstrap-7952B3?logo=bootstrap&logoColor=white)](https://getbootstrap.com/)
 
-# OVERVIEW
-Product filter is build using HTML and Javascript and designed using CSS.
-It was an interesting idea to build this page.
+A responsive product filtering application that allows users to browse and filter products by various criteria including price, category, rating, and availability.
 
+![Product Filter Screenshot](Img/screenshot.png)
 
-# SYSTEM FLOW
--The page contains normal products such as sport shoes,phones and sound systems.
--They are well arranged in a page displaying their information on build, their rating and if they are available.
--You are able to view how they look and search for specific items.
+## Features
 
-# How It Works
--User opens the page in any of their prefferd browsers.
--An option to filter specific items according to different categories such as Kitchen,Audio,sportswear and Electronics.
--One can choose products according to their star ratings.
--An option to search product by name is also available.
--This covers various parts of the Javascript and HTML.
+- **Interactive Filtering**:
+  - Price range slider with real-time updates
+  - Category dropdown selector
+  - Minimum rating filter
+  - In-stock toggle
+  - Search by product name, brand, or description
 
-# FUTURE ENHANCEMENTS
-Integration of python language to provide smoother operation when filtering products.
-Host the page on vercel for easy access.
+- **Sorting Options**:
+  - Price (low to high / high to low)
+  - Product rating
+  - Alphabetical order
+
+- **Responsive Design**:
+  - Works on desktop, tablet, and mobile devices
+  - Sticky filter sidebar on larger screens
+  - Collapsible layout on smaller screens
+
+- **User Experience**:
+  - Real-time filtering as you adjust criteria
+  - Product count display
+  - "No results" message when filters return empty
+  - Visual distinction for out-of-stock items
+  - Reset all filters button
+
+## Technologies Used
+
+- **Frontend**:
+  - HTML5
+  - CSS3
+  - JavaScript (ES6)
+  - Bootstrap 5 (for responsive layout and components)
+
+## Installation
+
+1. **Clone the repository**:
+   ```bash
+   git clone https://github.com/333IAN/product-filter.git
+   cd product-filter
+
+2. Open in browser
+
+# 3.Project Structure
+product-filter/
+├── productfilter.html        # Main HTML file
+├── productfilter.css         # Custom styles
+├── productfilter.js          # JavaScript functionality
+├── Img/                      # Product images
+│   ├── iphone15.jpg
+│   ├── sonyHeadphones.jpg
+│   ├── dellXPS13.jpg
+│   └── ... (other product images)
+└── README.md                 # This documentation
+
+# Usage
+1. Filter Products:
+ -Adjust price slider to set maximum price
+ -Select category from dropdown
+ -Choose minimum rating
+ -Toggle "In Stock Only" to hide unavailable items
+ -Type in the searcgh box to find specific products
+2. Sort Products:
+ -Use the "Sort by" dropdown to change product ordering
+3. Reset Filter:
+ -Click the "Reset Filters" button to clear all filters
+
+# Customization
+To add your own products:
+ 1. Edit the products array in productfilter.js:
+    const products = [
+      {
+        id: 1,
+        name: "Product Name",
+        price: 99.99,
+        brand: "Brand Name",
+        rating: 4,
+        img: "Img/product-image.jpg",
+        description: "Product description",
+        category: "Category",
+        available: true
+    },
+  
+];
+2.Add corresponding product images to the Img/ directory
+
+# Browser Support
+The application is tested and works on:
+  -Chrome(latest)
+  -Firefox(latest)
+  -Edge(latest)
+  -Safari(latest)
+  -Mobile browsers(Chrome, Safari)
 
 # Contact
-Feel free to add any ideas to the project.
+Contribution are welcome!
+1. Fork the repository
+
+2.Create a new branch (git checkout -b feature/your-feature)
+
+3.Commit your changes (git commit -m 'Add some feature')
+
+4.Push to the branch (git push origin feature/your-feature)
+
+5.Open a Pull Request
+
 Contact me <a href="https://github.com/333IAN">here</a>
 
 
