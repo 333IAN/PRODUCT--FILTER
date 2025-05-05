@@ -8,7 +8,6 @@
 A responsive product filtering application that allows users to browse and filter products by various criteria including price, category, rating, and availability.
 
 ![Product Filter Homepage View](images/screenshot.png)
-![Product Filter Dashboard View](dashboard/screenshot(10).png)
 
 
 ## Features
