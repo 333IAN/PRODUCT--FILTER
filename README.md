@@ -125,6 +125,12 @@ Contribution are welcome!
 ```
 Contact me <a href="https://github.com/333IAN">here</a>
 
+# License
+
+This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for full license text
+
+
+
 
 
 
