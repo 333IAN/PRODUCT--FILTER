@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Filter</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="productfilter.css">
+</head>
+<body>
+    <div class="container py-5">
+        <h1 class="text-center mb-4">Product Filter</h1>
+        <div class="row">
+            <!-- Filter Sidebar -->
+            <div class="col-md-3">
+                <div class="filter-card">
+                    <h4>Filters</h4>
+                    <form id="filterForm">
+                        <!-- Search Box moved to filters -->
+                        <div class="mb-4 search-bar">
+                            <input type="text" id="searchInput" class="form-control" placeholder="Search products...">
+                        </div>
+                        
+                        <!-- Price Range filter -->
+                        <div class="mb-4">
+                            <label for="priceRange" class="form-label">Price: $<span id="priceValue">1000</span></label>
+                            <input type="range" class="form-range" id="priceRange" min="0" max="1000" step="50" value="1000">
+                        </div>
+                        
+                        <!-- Categories filter -->
+                        <div class="mb-4">
+                            <label for="category" class="form-label">Category</label>
+                            <select class="form-select" id="category">
+                                <option value="All">All Categories</option>
+                                <option value="Electronics">Electronics</option>
+                                <option value="Home & Kitchen">Home & Kitchen</option>
+                                <option value="Sports & Outdoors">Sports & Outdoors</option>
+                                <option value="Audio">Audio</option>
+                                <option value="Photography">Photography</option>
+                                <option value="Sportswear">Sportswear</option>
+                            </select>
+                        </div>
+                        
+                        <!-- Ratings Filter -->
+                        <div class="mb-4">
+                            <label for="rating" class="form-label">Minimum Rating</label>
+                            <select class="form-select" id="rating">
+                                <option value="0">All Ratings</option>
+                                <option value="5">5 Stars</option>
+                                <option value="4">4+ Stars</option>
+                                <option value="3">3+ Stars</option>
+                                <option value="2">2+ Stars</option>
+                                <option value="1">1+ Stars</option>
+                            </select>
+                        </div>
+                        
+                        <!-- In stock filter -->
+                        <div class="form-check mb-4">
+                            <input class="form-check-input" type="checkbox" id="inStock">
+                            <label class="form-check-label" for="inStock">In Stock Only</label>
+                        </div>
+                        
+                        <!-- Reset Filters Button -->
+                        <button type="button" id="resetFilters" class="btn btn-outline-secondary w-100 mb-3">Reset Filters</button>
+                    </form>
+                </div>
+            </div>
+            
+            <!-- Products Section -->
+            <div class="col-md-9">
+                <div class="d-flex justify-content-between align-items-center mb-4">
+                    <h5 id="productCount">Showing all products</h5>
+                    <div class="sort-options">
+                        <select id="sortBy" class="form-select">
+                            <option value="default">Sort by</option>
+                            <option value="price-low">Price: Low to High</option>
+                            <option value="price-high">Price: High to Low</option>
+                            <option value="rating">Rating</option>
+                            <option value="name">Name</option>
+                        </select>
+                    </div>
+                </div>
+                
+                <div class="row" id="productList">
+                    <!-- Product cards will be inserted here by JavaScript -->
+                </div>
+                
+                <!-- No Results Message -->
+                <div id="noResults" class="text-center py-5" style="display: none;">
+                    <h4>No products found</h4>
+                    <p>Try adjusting your filters or search term</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <script src="productfilter.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
